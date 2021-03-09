@@ -1,24 +1,33 @@
-﻿# Readme Mesh Video Conference
+# Readme Mesh Video Conference
 
-## Installation
+This is the Video Conference Web Application for making benchmark tests with mesh.
 
-Nodemon allows us to refresh application when code was changed without restarting the server.
+## Getting Started
 
-```bash
-npm --save-dev nodemon
+### Installing
+
+Nodemon is needed to run the Application.
+
+```
+npm i --save-dev nodemon
 ```
 
-## Usage
+## Running the Application in localhost
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+To run the application in localhost, you need two consoles.
+On the first console u start the Application:
 ```
+npm run devStart
+```
+On the second console u start the peerjs port:
+```
+peerjs --port 3001
+```
+## Built With
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Libarys we used in node (already included in node_modules, so dont need to install extra).
 
-Please make sure to update tests as appropriate.
+```
+npm i express ejs socket.io
+npm i uuid
+```
