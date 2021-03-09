@@ -25,6 +25,9 @@ On the second console u start the peerjs port:
 ```
 peerjs --port 3001
 ```
+
+The application can be opend now on the web browser at localhost:3000
+
 ## Built With
 
 Libarys we used in node:
