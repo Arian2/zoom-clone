@@ -27,7 +27,7 @@ peerjs --port 3001
 ```
 ## Built With
 
-Libarys we used in node (already included in node_modules, so dont need to install extra).
+Libarys we used in node:
 
 ```
 npm i express ejs socket.io
