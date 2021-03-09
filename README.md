@@ -2,10 +2,10 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Nodemon allows us to refresh application when code was changed without restarting the server.
 
 ```bash
-pip install foobar
+npm --save-dev nodemon
 ```
 
 ## Usage
