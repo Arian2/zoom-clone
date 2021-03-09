@@ -1,20 +1,24 @@
-﻿# zoom-clone
+﻿# Readme Mesh Video Conference
 
-This solution is based on openvidu-call-react. The application license can be found here: http://www.apache.org/licenses/LICENSE-2.0
+## Installation
 
-In order to be able to start the application in localhost, you need to have and openvidu server running. This can be done with this docker file:
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-docker run -p 4443:4443 --rm -e OPENVIDU_SECRET=MY_SECRET openvidu/openvidu-server-kms:2.16.0
+```bash
+pip install foobar
+```
 
-this uses the port 4443 for the openvidu server (kurento media server) and MY_SECRET as password for the server. Username is OPENVIDUAPP. 
+## Usage
 
-Then you need to open a separate terminal, navigate to openvidu-call-react/openvidu-call-react and execute
+```python
+import foobar
 
-npm i
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
 
-once the installations are done, execute
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-npm run
-
-After this, the application can be opened in your browser under  http://localhost:3000 (Note: getUserMedia normally is allowed only on https, but as it is localhost, the browser should let the camera and microphone to be used). The first time you open it, it will report a certificate issue, you need to go to the "Advanced options" (in Chrome), and proceed to the page. You will be redirected to the server on port 4443: https://localhost:4443/accept-certificate if you see "accept-cert", you can open up the localhost:3000 again and the application should run now.
-
+Please make sure to update tests as appropriate.
